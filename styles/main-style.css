@@ -145,5 +145,12 @@ input {
 }
 
 .submit {
-  
+  float: right;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  border: 0.15rem solid rgb(68, 68, 68);
+  color: #d2d2d2;
+  border-radius: 3rem;
+  font-weight: 400;
 }
