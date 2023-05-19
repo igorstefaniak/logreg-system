@@ -1,0 +1,149 @@
+
+/* Igor Stefaniak */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+._vanish {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #161519;
+}
+
+.form {
+  position: relative;
+  width: 33rem;
+  height: auto;
+  padding: 3rem;
+  background: #161519;
+}
+
+.input-container {
+  position: relative;
+  height: auto;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background: #161519;
+  margin: 25px
+}
+
+.input-container::before {
+  position: absolute;
+  content: "";
+  height: 30%;
+  width: 0.12rem;
+  left: 16%;
+  border-radius: 0.5rem;
+  background: #707070;
+}
+
+.input-container .input-field {
+  position: relative;
+  max-height: 4.2rem;
+  padding: 0.5rem 1.5rem;
+  padding-left: 5rem !important;
+  border: 0.15rem solid rgb(68, 68, 68);
+  color: #d2d2d2;
+  outline: none;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 100%;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  color: #999999;
+  padding: 0 0.3rem;
+  user-select: none;
+}
+
+.icon {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+.input-field + label {
+  top: 0%;
+  left: 7%;
+  background-color: #161519;
+  color: #d2d2d2;
+}
+
+.input-field.valid, .input-field:valid {
+  border-color: #96c477;
+}
+
+.input-field.invalid, .input-field:invalid:not(:placeholder-shown, .input-field[type="date"]){
+  border-color: #ff654a;
+}
+
+.input-field[type="date"]:not(:in-range){
+  border-color: #ff654a;
+}
+
+
+#email-input:not(:placeholder-shown)#email-input:not(:focus) + label {
+  top: 0%;
+  left: 7%;
+  background-color: #161519;
+  color: #d2d2d2;
+}
+input {
+  color-scheme: dark;
+}
+.input-container select {
+  background: #161519!important;
+}
+
+.submit {
+  
+}
